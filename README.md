@@ -5,4 +5,5 @@ For every song thats not I made Lyrically to scrape Genius Lyrics and provide ly
 Also decided to try dotenet so first time using C# \
 \
 I know my scraper uses RegEx... I will rewrite it when it breaks \
+\
 Enjoy the mega scuffed code
