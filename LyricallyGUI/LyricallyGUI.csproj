@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="HtmlAgilityPack" Version="1.11.43" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta1" />
+      <PackageReference Include="RestSharp" Version="108.0.1" />
+      <PackageReference Include="System.Drawing.Common" Version="7.0.0-preview.4.22229.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="assets\settings-gears.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Junk\assets\settings-gears.png" />
+    </ItemGroup>
+
+</Project>

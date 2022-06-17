@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="LyricallyGUI.LyricGetter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="650" d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="1" BorderThickness="0,2,0,2" BorderBrush="Black" IsReadOnly="True"  FontFamily="Micross" x:Name="Main"/>
+        
+        <Grid Grid.Row="0" x:Name="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox VerticalAlignment="Center" Background="Transparent" BorderThickness="0" Grid.Column="0" IsReadOnly="True" FontStyle="Italic" FontFamily="Micross" FontSize="20" x:Name="Title"/>
+            <Button x:Name="Settings" Click="ButtonSettings_OnClick" Padding="5" FontSize="15" Grid.Column="1" Background="Transparent" BorderThickness="0">&#x2699;</Button>
+        </Grid>
+        
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button Grid.Column="0" Click="ButtonRepeat_OnClick">Repeat</Button>
+            <Button Grid.Column="1" Click="ButtonBase_OnClick">Refresh</Button>
+            <Button Grid.Column="2" Click="ButtonSkip_OnClick">Skip</Button>
+        </Grid>
+    </Grid>
+</UserControl>
+
+<!--- <Image Source="{StaticResource SettingsIcon}" Width="20" Height="20"/> --> 
